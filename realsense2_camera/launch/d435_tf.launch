@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<launch>
+  <arg
+    name="model" />
+  <arg
+    name="gui"
+    default="False" />
+
+  <param name="realsense_robot_description" command="$(find xacro)/xacro --inorder '$(find realsense2_camera)/urdf/realsense_standalong_physical.urdf.xacro'" />
+
+  <node
+    name="realsense_tf"
+    pkg="tf"
+    type="static_transform_publisher"
+    args="0 1.1 1.58 0 0.51 -1.57075 root realsense_rgb_optical_frame 40" />
+
+
+  <node
+    name="realsense_joint_state_publisher"
+    pkg="joint_state_publisher"
+    type="joint_state_publisher">
+	<remap from="robot_description" to="realsense_robot_description" />    
+	<remap from="joint_states" to="realsense_joint_states" />
+  </node>
+  <node
+    name="realsense_robot_state_publisher"
+    pkg="robot_state_publisher"
+    type="robot_state_publisher">
+	<remap from="robot_description" to="realsense_robot_description" />    
+	<remap from="joint_states" to="realsense_joint_states" />     
+	<remap from="tf_prefix" to="realsense_tf_prefix" /> 
+  </node>
+
+</launch>

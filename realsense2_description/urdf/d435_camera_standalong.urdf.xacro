@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<robot name="realsense_standalong" xmlns:xacro="http://ros.org/wiki/xacro">
+     <xacro:include filename="$(find realsense2_description)/urdf/_d435.urdf.xacro" />
+     <link name="root"/>
+    <xacro:gazebo_d435  parent="root">
+        <origin xyz="2.2 0 1.6"	
+                rpy="0 0.349066 3.1415" /> <!-- 2.2 0 1.6 0 0.349066 3.1415 -->
+    </xacro:gazebo_d435>
+    <gazebo>
+    <static>true</static>
+    </gazebo>
+</robot>
