@@ -12,7 +12,7 @@
     name="realsense_tf"
     pkg="tf"
     type="static_transform_publisher"
-    args="0 1.1 1.58 0 0.51 -1.57075 root realsense_rgb_optical_frame 40" />
+    args="1.5 0.0 0.96 0.0 0.0 3.141592 root realsense_rgb_optical_frame 40" />
 
 
   <node
