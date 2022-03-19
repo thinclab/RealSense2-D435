@@ -4,7 +4,7 @@
   
   <link name="root" />
   <xacro:sensor_d435 name="camera" topics_ns="camera" parent="root" publish_pointcloud="true">
-    <origin xyz="1.5 0.0 0.96" rpy="0.0 0.0 3.141592" />
+    <origin xyz="-0.2 -0.35 1.23" rpy="0.09 0.28 1.5" />
   </xacro:sensor_d435>
   <gazebo>
     <static>true</static>

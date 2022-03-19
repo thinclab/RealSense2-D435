@@ -23,11 +23,4 @@
 	<remap from="joint_states" to="realsense_joint_states" />     
 	<remap from="tf_prefix" to="realsense_tf_prefix" /> 
 	</node>
-  <!--node
-    name="kinectv2_rviz"
-    pkg="rviz"
-    type="rviz"
-    args="-d $(find kinect_v2)/urdf.rviz" >
-    <param name="use_gui" value="$(arg gui)" />
-  </node-->
 </launch>
