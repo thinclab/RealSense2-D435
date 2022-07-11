@@ -3,8 +3,8 @@
   <xacro:include filename="$(find realsense2_description)/urdf/_d435.urdf.xacro" />
   
   <link name="root" />
-  <xacro:sensor_d435 name="camera" topics_ns="camera" parent="root" publish_pointcloud="true">
-    <origin xyz="-0.2 -0.335 1.23" rpy="0.09 0.28 1.55" />
+  <xacro:sensor_d435 name="camera" parent="root">
+    <origin xyz="-0.225 -0.345 1.23" rpy="0.009 0.35 1.535" />
   </xacro:sensor_d435>
   <gazebo>
     <static>true</static>

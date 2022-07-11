@@ -6,13 +6,13 @@
     name="gui"
     default="False" />
 
-  <param name="realsense_robot_description" command="$(find xacro)/xacro --inorder '$(find realsense2_camera)/urdf/realsense_standalong_physical.urdf.xacro'" />
+  <param name="realsense_robot_description" command="$(find xacro)/xacro '$(find realsense2_camera)/urdf/realsense_standalong_physical.urdf.xacro'" />
 
   <node
     name="realsense_tf"
     pkg="tf"
     type="static_transform_publisher"
-    args="-0.2 -0.335 1.23 0.09 0.28 1.55 root realsense_rgb_optical_frame 40" />
+    args="-0.225 -0.345 1.23 0.009 0.35 1.535 root realsense_rgb_optical_frame 40" />
 
   <node
     name="root_tf"
