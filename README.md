@@ -7,7 +7,9 @@ For running in ROS2 environment please switch to the [ros2 branch](https://githu
 
 LibRealSense2 supported version: v2.50.0 (see [realsense2_camera release notes](https://github.com/IntelRealSense/realsense-ros/releases))
 
-## Installation Instructions
+**NOTE: Do not use apt-get install to install the realsense sdk. That method has issues. Follow the steps below, derived from [here](https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md#installing-the-packages). Also, make sure, your versions match the specifications from [this issue](https://github.com/IntelRealSense/realsense-ros/issues/2386#issuecomment-1177818564).**
+
+In order to get Realsense camera installed and integrated with ROS, perform the following steps:
 
 ### Ubuntu
    #### Step 1: Install the ROS distribution
