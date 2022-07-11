@@ -22,7 +22,7 @@ In order to get Realsense camera installed and integrated with ROS, perform the 
 
 ### There are 2 sources to install realsense2_camera from:
 
-* ### Method 1: The ROS distribution:
+* ### Method 1: The ROS distribution (NOT RECOMMENDED, HAS ISSUES):
 
   *Ubuntu*
 
